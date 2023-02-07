@@ -12,17 +12,17 @@
   // if it is icy, print "yak traks"
 
 var weather = "sunny"
-
+weather = "icy" // reassigned the value to get a non "coat" output
 if (weather === "sunny") {
-  console.log("sunscreen");
+  console.log("sunscreen")
 } else if (weather === "rainy") {
-  console.log("umbrella");
+  console.log("umbrella")
 } else if (weather === "snowy") {
-  console.log("coat");
+  console.log("coat")
 } else if (weather === "icy") {
-  console.log("yak traks");
+  console.log("yak traks")
 } else {
-  console.log("good to go!");
+  console.log("good to go!")
 }
 
 // Experiment with manipulating the value held in variable 'weather'
@@ -42,11 +42,22 @@ if (weather === "sunny") {
 // Experiment with manipulating the value held within numQuarters
 // to make sure both conditions can be achieved.
 
-var numQuarters = 0
+var numQuarters = 1
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
+console.log(`At this point in code, the number of Quarters is ${numQuarters}, since a gumball costs 2 quarters:`)
+if (numQuarters >= 2) {
+  console.log("I have enough money for a gumball")
+} else {
+  console.log("I don't have enough money for a gumball")
+}
 
+numQuarters = 4 //Reassigned value
+console.log(`At this point in code, the number of Quarters is ${numQuarters}, since a gumball costs 2 quarters:`)
+if (numQuarters >= 2) {
+  console.log("I have enough money for a gumball")
+} else {
+  console.log("I don't have enough money for a gumball")
+}
 
 // #####################
 // Using the variables defined below, write code that will tell you
@@ -62,6 +73,20 @@ console.log("I don't have enough money for a gumball");
 // Experiment with manipulating the value held within both variables
 // to make sure all above conditions output what you expect.
 
-var cupsOfFlour = 1;
-var hasSauce = true;
+var cupsOfFlour = 1
+var hasSauce = true
+console.log(`At this point in code, the cups of flour we have = ${cupsOfFlour}`)
+if (cupsOfFlour >= 2 && hasSauce) {
+  console.log("I can make pizza")
+} else {
+  console.log("I cannot make pizza")
+}
+
+cupsOfFlour = 3 //reassigning value
+console.log(`At this point in code, the cups of flour we have = ${cupsOfFlour}`)
+if (cupsOfFlour >= 2 && hasSauce) {
+  console.log("I can make pizza")
+} else {
+  console.log("I cannot make pizza")
+}
 
